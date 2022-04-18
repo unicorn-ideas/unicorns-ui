@@ -1,13 +1,13 @@
 import React from 'react';
-import Page from './index';
+import Theme from './index';
 
 export default {
-  title: 'Components/Page',
-  component: Page,
+  title: 'Components/Theme',
+  component: Theme,
 };
 
 const Template = (args) => (
-  <Page {...args}>
+  <Theme {...args}>
     <h1>Spasm of Excitement!</h1>
     <p>
       He felt a spasm of excitement because he knew instinctively who it was, or
@@ -40,7 +40,7 @@ const Template = (args) => (
       the matter curve…” Her mood swings were very unpredictable but so far
       they’d all been between different types of bad ones.
     </p>
-  </Page>
+  </Theme>
 );
 
 export const Default = Template.bind({});

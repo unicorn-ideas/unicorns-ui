@@ -1,11 +1,9 @@
-import Page from './components/Page';
-import logo from './logo.svg';
+import Theme from './components/Theme';
 
 function App() {
   return (
-    <Page className="App">
+    <Theme className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -18,7 +16,7 @@ function App() {
           Learn React
         </a>
       </header>
-    </Page>
+    </Theme>
   );
 }
 

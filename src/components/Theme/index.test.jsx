@@ -1,20 +1,19 @@
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Page from './index';
+import Theme from './index';
 
 test('renders a message', () => {
   const { container, getByText } = render(
-    <Page>
+    <Theme>
       <h1>Goodbye, Vogons!</h1>
-    </Page>,
+    </Theme>,
   );
   expect(getByText('Goodbye, Vogons!')).toBeInTheDocument();
   expect(container.firstChild).toMatchInlineSnapshot(`
-    <div>
-      Hello from Branded Page:
-      <h1>
-        Goodbye, Vogons!
-      </h1>
-    </div>
-  `);
+<main>
+  <h1>
+    Goodbye, Vogons!
+  </h1>
+</main>
+`);
 });
