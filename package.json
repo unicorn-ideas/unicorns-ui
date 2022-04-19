@@ -5,7 +5,9 @@
     "pwa": "pwa-asset-generator $SOURCE_FILE $OUTPUT_PATH --quality 90 --favicon --icon",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "eslintConfig": {
     "extends": [
@@ -28,6 +30,15 @@
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
+    "@storybook/addon-actions": "^6.5.0-alpha.64",
+    "@storybook/addon-essentials": "^6.5.0-alpha.64",
+    "@storybook/addon-interactions": "^6.5.0-alpha.64",
+    "@storybook/addon-links": "^6.5.0-alpha.64",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack5": "^6.5.0-alpha.64",
+    "@storybook/manager-webpack5": "^6.5.0-alpha.64",
+    "@storybook/react": "^6.5.0-alpha.64",
+    "@storybook/testing-library": "^0.0.10--canary.9d5661e.0",
     "@svgr/webpack": "^5.5.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
@@ -59,8 +70,8 @@
     "mini-css-extract-plugin": "^2.4.5",
     "postcss": "^8.4.4",
     "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-import": "^14.1.0",
     "postcss-loader": "^6.2.1",
-    "postcss-normalize": "^10.0.1",
     "postcss-preset-env": "^7.0.1",
     "prompts": "^2.4.2",
     "pwa-asset-generator": "^6.0.8",

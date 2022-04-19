@@ -10,10 +10,12 @@ test('renders a message', () => {
   );
   expect(getByText('Goodbye, Vogons!')).toBeInTheDocument();
   expect(container.firstChild).toMatchInlineSnapshot(`
-<main>
-  <h1>
-    Goodbye, Vogons!
-  </h1>
-</main>
-`);
+    <main
+      class="text-blue-900 bg-slate-700"
+    >
+      <h1>
+        Goodbye, Vogons!
+      </h1>
+    </main>
+  `);
 });
