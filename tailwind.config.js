@@ -7,6 +7,18 @@ module.exports = {
           x: 'gold',
           y: 'black',
         },
+        primary: {
+          x: 'red',
+          y: 'white',
+        },
+        button: {
+          x: 'steelblue',
+          y: 'white',
+        },
+        'button-hover': {
+          x: 'rebeccapurple',
+          y: 'white',
+        },
       },
     },
   },
