@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import Theme from './index';
 
-test('renders a message', () => {
+test('renders a control', () => {
   const { container, getByText } = render(
     <Theme>
       <h1>Goodbye, Vogons!</h1>
@@ -11,11 +11,15 @@ test('renders a message', () => {
   expect(getByText('Goodbye, Vogons!')).toBeInTheDocument();
   expect(container.firstChild).toMatchInlineSnapshot(`
     <main
-      class="text-blue-800"
+      class="bg-page-x text-page-y"
     >
-      <h1>
-        Goodbye, Vogons!
-      </h1>
+      <div
+        class="w-1/2 m-auto p-10 leading-loose"
+      >
+        <h1>
+          Goodbye, Vogons!
+        </h1>
+      </div>
     </main>
   `);
 });

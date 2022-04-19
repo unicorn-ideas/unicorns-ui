@@ -5,8 +5,10 @@ import './index.css';
 
 const Page = ({ children }) => {
   return (
-    <main className={classnames('bg-slate-600')}>
-      <div className={classnames('w-1/2 m-auto p-10')}>{children}</div>
+    <main className={classnames('bg-page-x text-page-y')}>
+      <div className={classnames('w-1/2 m-auto p-10 leading-loose')}>
+        {children}
+      </div>
     </main>
   );
 };
