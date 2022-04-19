@@ -11,7 +11,7 @@ test('renders a message', () => {
   expect(getByText('Goodbye, Vogons!')).toBeInTheDocument();
   expect(container.firstChild).toMatchInlineSnapshot(`
     <main
-      class="text-blue-900 bg-slate-700"
+      class="text-blue-800"
     >
       <h1>
         Goodbye, Vogons!
