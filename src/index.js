@@ -1,10 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import loadable from '@loadable/component';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-);
+export const Button = loadable(() => import('./components/Button'), {
+  resolveComponent: (component) => component.default,
+});
+
+export const Theme = loadable(() => import('./components/Theme'), {
+  resolveComponent: (component) => component.default,
+});
+
+export const Title = loadable(() => import('./components/Title'), {
+  resolveComponent: (component) => component.default,
+});

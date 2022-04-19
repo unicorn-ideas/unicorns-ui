@@ -7,7 +7,7 @@
 [onderceylan/pwa-asset-generator][pwa]
 
 ```
-./scripts/pwa.sh ../themes/unicorns/assets/logo.png
+./scripts/pwa.sh ./assets/logo.png
 ```
 
 ---
